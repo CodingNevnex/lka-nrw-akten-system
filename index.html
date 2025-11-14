@@ -977,7 +977,7 @@
         };
         const generateFinalReport = (data, stats) => {
             const lawList = data.selectedLaws.map(law =>
-                `${law.paragraph} (${law.description}) - ${law.count}x angewendet`
+                `${law.paragraph} ${law.description} - ${law.count}x angewendet`
             ).join('\n');
 
             const tatvorwurf = data.selectedLaws.length > 0
